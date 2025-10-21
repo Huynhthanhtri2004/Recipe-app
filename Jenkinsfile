@@ -7,7 +7,7 @@ pipeline {
     FIREBASE_PROJECT_ID = "recipeapp-90db2"
     // ⚠️ CẦN THAY THẾ: Branch bạn muốn deploy
     GIT_BRANCH = "main"
-    // Credential ID của GitHub PAT (đã lưu trong Jenkins)
+    // Credential ID của GitHub PAT(đã lưu trong Jenkins)
     GITHUB_CREDENTIALS = "github-pat"
     // Credential ID của Secret File Firebase (ID: firebase-sa)
     FIREBASE_CREDENTIALS = "firebase-sa"
