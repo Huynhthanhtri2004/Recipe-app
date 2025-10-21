@@ -37,7 +37,7 @@ pipeline {
     stage('Build Flutter Web') {
 			steps {
 				// Thực hiện build Flutter Web cho Production. Kết quả nằm trong thư mục 'build/web'
-        sh 'flutter build web --release'
+        sh 'flutter build web --release --no-tree-shake-icons'
       }
       post {
 				// Lưu lại artifact (tệp build) vào Jenkins để xem lại sau
