@@ -20,7 +20,7 @@ pipeline {
         checkout([$class: 'GitSCM',
           branches: [[name: "*/${GIT_BRANCH}"]],
           userRemoteConfigs: [[
-            url: 'https://github.com/huynhthanhhn2004/Recipe-app.git',
+            url: 'https://github.com/Huynhthanhtri2004/Recipe-app.git',
             credentialsId: GITHUB_CREDENTIALS
           ]]
         ])
