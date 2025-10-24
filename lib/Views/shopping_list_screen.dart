@@ -115,27 +115,7 @@ class _ShoppingListScreenState extends State<ShoppingListScreen> {
                     Expanded(
                       flex: 3,
                       child: TextField(
-                        controller: _itemController,
-                        decoration: const InputDecoration(
-                          labelText: 'Nguyên liệu',
-                          hintText: 'Nhập tên nguyên liệu',
-                          border: OutlineInputBorder(),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      flex: 2,
-                      child: TextField(
-                        controller: _quantityController,
-                        decoration: const InputDecoration(
-                          labelText: 'Số lượng',
-                          hintText: '1',
-                          border: OutlineInputBorder(),
-                        ),
-                      ),
-                    ),
-                  ],
+                     
                 ),
                 const SizedBox(height: 12),
                 Row(

@@ -5,8 +5,11 @@ import 'package:recipe_app/Utils/constants.dart';
 import 'package:recipe_app/Views/food_items_display.dart';
 import 'package:recipe_app/Views/view_all_items.dart';
 import 'package:recipe_app/Views/notifications_screen.dart';
+import 'package:recipe_app/Views/shopping_list_screen.dart';
 import 'package:recipe_app/Widget/banner.dart';
 import 'package:recipe_app/Widget/my_icon_button.dart';
+import 'package:provider/provider.dart';
+import 'package:recipe_app/Provider/theme_provider.dart';
 
 class MyAppHomeScreen extends StatefulWidget {
   const MyAppHomeScreen({super.key});
@@ -371,6 +374,29 @@ class _MyAppHomeScreenState extends State<MyAppHomeScreen> {
           ),
         ),
         const Spacer(),
+        Consumer<ThemeProvider>(
+          builder: (context, themeProvider, child) {
+            return MyIconButton(
+              icon: themeProvider.isDarkMode ? Iconsax.sun_1 : Iconsax.moon,
+              pressed: () {
+                themeProvider.toggleTheme();
+              },
+            );
+          },
+        ),
+        const SizedBox(width: 8),
+        MyIconButton(
+          icon: Iconsax.shopping_cart,
+          pressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const ShoppingListScreen(),
+              ),
+            );
+          },
+        ),
+        const SizedBox(width: 8),
         MyIconButton(
           icon: Iconsax.notification,
           pressed: () {

@@ -11,23 +11,6 @@ import 'login_screen.dart';
     const RegisterScreen({Key? key}) : super(key: key);
 
     @override
-    _RegisterScreenState createState() => _RegisterScreenState();
-  }
-
-class _RegisterScreenState extends State<RegisterScreen> {
-  final _formKey = GlobalKey<FormState>();
-  final _emailController = TextEditingController();
-  final _passwordController = TextEditingController();
-  final _confirmPasswordController = TextEditingController();
-  final _displayNameController = TextEditingController();
-  bool _isLoading = false;
-  bool _obscurePassword = true;
-  bool _obscureConfirmPassword = true;
-  String? _errorMessage;
-
-  Future<void> _register() async {
-    if (!_formKey.currentState!.validate()) return;
-
     setState(() {
       _isLoading = true;
       _errorMessage = null;

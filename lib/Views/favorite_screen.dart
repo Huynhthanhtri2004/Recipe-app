@@ -6,26 +6,7 @@ import 'package:recipe_app/Provider/favorite_provider.dart';
 import 'package:recipe_app/Utils/constants.dart';
 
 class FavoriteScreen extends StatefulWidget {
-  const FavoriteScreen({super.key});
-
-  @override
-  State<FavoriteScreen> createState() => _FavoriteScreenState();
-}
-
-class _FavoriteScreenState extends State<FavoriteScreen> {
-  @override
-  Widget build(BuildContext context) {
-    final provider = FavoriteProvider.of(context);
-    final favoriteItems = provider.favorites;
-
-    return Scaffold(
-      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
-        centerTitle: true,
-        elevation: 0,
-        title: Text(
-          "Favorites",
+  const FavoriteScreen({super.key})
           style: TextStyle(
             fontWeight: FontWeight.bold,
             color: Theme.of(context).colorScheme.onBackground,

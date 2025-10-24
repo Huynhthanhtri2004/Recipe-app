@@ -7,25 +7,6 @@ import 'package:recipe_app/Utils/constants.dart';
 import 'user_management_screen.dart';
 import 'pending_recipes_approval.dart';
 
-class AdminMainScreen extends StatelessWidget {
-  const AdminMainScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const _AdminTabs();
-  }
-}
-
-class _AdminTabs extends StatefulWidget {
-  const _AdminTabs();
-
-  @override
-  State<_AdminTabs> createState() => _AdminTabsState();
-}
-
-class _AdminTabsState extends State<_AdminTabs> {
-  int _index = 0;
-  final List<Widget> _pages = [
     const _AdminDashboardPage(),
     const PendingRecipesApproval(),
     const UserManagementScreen(),

@@ -13,16 +13,7 @@ class EditProfileScreen extends StatefulWidget {
   State<EditProfileScreen> createState() => _EditProfileScreenState();
 }
 
-class _EditProfileScreenState extends State<EditProfileScreen> {
-  final _formKey = GlobalKey<FormState>();
-  final TextEditingController _displayNameController = TextEditingController();
-  final TextEditingController _avatarUrlController = TextEditingController();
-  
-  List<String> _selectedDietaryPreferences = [];
-  final List<String> _availablePreferences = [
-    'Ăn chay',
-    'Thuần chay',
-    'Keto',
+class _EditProfileScreenState extends State<EditPr
     'Paleo',
     'Low-carb',
     'Gluten-free',
