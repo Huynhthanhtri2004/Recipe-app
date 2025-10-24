@@ -18,23 +18,11 @@ class MyAppHomeScreen extends StatefulWidget {
   State<MyAppHomeScreen> createState() => _MyAppHomeScreenState();
 }
 
-class _MyAppHomeScreenState extends State<MyAppHomeScreen> {
-  String category = "All";
-  String searchQuery = "";
-  String selectedDifficulty = "All";
-  String selectedMealType = "All";
-  String selectedCuisine = "All";
-  int? maxTime;
   final TextEditingController _searchController = TextEditingController();
 
   final CollectionReference categoriesItems = FirebaseFirestore.instance.collection('App-Category');
 
-  Query get filteredRecipes => FirebaseFirestore.instance
-      .collection("RecipeApp")
-      .where('category', isEqualTo: category);
-
-  Query get allRecipes => FirebaseFirestore.instance.collection("RecipeApp");
-
+  Query get filteredRecipes =>
   Query get selectedRecipes {
     Query query = category == "All" ? allRecipes : filteredRecipes;
     

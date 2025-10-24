@@ -21,12 +21,6 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        return android;
-      case TargetPlatform.iOS:
-        return ios;
-      case TargetPlatform.macOS:
-        return macos;
-      case TargetPlatform.windows:
         return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
@@ -41,39 +35,13 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCf5Z6T3fQL_0OQX0Ar1fD-T7PYcilLzO8',
-    appId: '1:632817783218:web:360c0b8f8c7a48cf6354ab',
-    messagingSenderId: '632817783218',
-    projectId: 'recipeapp-90db2',
-    authDomain: 'recipeapp-90db2.firebaseapp.com',
-    storageBucket: 'recipeapp-90db2.firebasestorage.app',
-    measurementId: 'G-J9Q3XF50KY',
-  );
-
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA6s3OXkZl6gAiRI7DQWbs7v1cd2zjwEOE',
-    appId: '1:632817783218:android:f080d080710ed9d16354ab',
+    apiKey: 'AIzaSyCf5Z6T3fQL9d16354ab',
     messagingSenderId: '632817783218',
     projectId: 'recipeapp-90db2',
     storageBucket: 'recipeapp-90db2.firebasestorage.app',
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCcbLCEIxGz3_4GVA4p8NQt9RUJxnjwBA8',
-    appId: '1:632817783218:ios:856c2157616193e86354ab',
-    messagingSenderId: '632817783218',
-    projectId: 'recipeapp-90db2',
-    storageBucket: 'recipeapp-90db2.firebasestorage.app',
-    iosBundleId: 'com.example.recipeApp',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCcbLCEIxGz3_4GVA4p8NQt9RUJxnjwBA8',
-    appId: '1:632817783218:ios:856c2157616193e86354ab',
-    messagingSenderId: '632817783218',
-    projectId: 'recipeapp-90db2',
-    storageBucket: 'recipeapp-90db2.firebasestorage.app',
-    iosBundleId: 'com.example.recipeApp',
+  static const FirebaseOptions maeApp',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(

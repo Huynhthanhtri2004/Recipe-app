@@ -14,19 +14,7 @@ class EditProfileScreen extends StatefulWidget {
 }
 
 class _EditProfileScreenState extends State<EditPr
-    'Paleo',
-    'Low-carb',
-    'Gluten-free',
-    'Dairy-free',
-    'Nut-free',
-    'Healthy',
-    'High-protein',
-  ];
-
-  bool _isLoading = false;
-
-  @override
-  void initState() {
+    
     super.initState();
     _loadUserData();
   }

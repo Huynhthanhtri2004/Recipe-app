@@ -18,18 +18,7 @@ class _PendingRecipesApprovalState extends State<PendingRecipesApproval> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        // Search and Filter Bar
-        Container(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            children: [
-              // Search Bar
-              TextField(
-                decoration: InputDecoration(
-                  hintText: 'Tìm kiếm công thức...',
-                  prefixIcon: const Icon(Iconsax.search_normal),
+    return Column(.search_normal),
                   suffixIcon: _searchQuery.isNotEmpty
                       ? IconButton(
                           icon: const Icon(Iconsax.close_circle),

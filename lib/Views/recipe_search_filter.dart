@@ -17,19 +17,7 @@ class _RecipeSearchFilterState extends State<RecipeSearchFilter> {
   bool _hasMore = true;
   DocumentSnapshot? _lastDocument;
   
-  // Search & Filter states
-  String _searchQuery = '';
-  List<String> _selectedCategories = [];
-  String _selectedDifficulty = 'all';
-  String _selectedCuisine = 'all';
-  String _sortBy = 'newest';
-  RangeValues _timeRange = const RangeValues(0, 180);
-  RangeValues _caloriesRange = const RangeValues(0, 1000);
-  
-  // Available options
-  final List<String> _categories = [
-    'Món chính', 'Món khai vị', 'Món tráng miệng', 'Món chay',
-    'Món nhanh', 'Món truyền thống', 'Món quốc tế', 'Món nướng',
+  // Search & Filter snướng',
     'Món hấp', 'Món chiên'
   ];
   

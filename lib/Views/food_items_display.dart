@@ -19,14 +19,7 @@ class FoodItemsDisplay extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => RecipeDetailScreen(documentSnapshot: documentSnapshot),
-          ),
-        );
-      },
-      child: Container(
-        margin: const EdgeInsets.only(right: 10),
-        width: 230,
-        child: Stack(
+            builder: (context) => Recipe
           children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,

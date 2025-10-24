@@ -20,12 +20,7 @@ class _SubmitRecipeScreenState extends State<SubmitRecipeScreen> {
   final TextEditingController _name = TextEditingController();
   final TextEditingController _image = TextEditingController();
   final TextEditingController _videoUrl = TextEditingController();
-  final TextEditingController _time = TextEditingController();
-  final TextEditingController _cal = TextEditingController();
-  final TextEditingController _cuisine = TextEditingController();
-  final TextEditingController _difficulty = TextEditingController();
-  final TextEditingController _mealType = TextEditingController();
-  final TextEditingController _ingredients = TextEditingController();
+  final TextEditingController _time = TextEd
   final TextEditingController _ingredientsAmount = TextEditingController();
   final TextEditingController _instructions = TextEditingController();
 

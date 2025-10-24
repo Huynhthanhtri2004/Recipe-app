@@ -21,11 +21,6 @@ class RecipeSelectionScreen extends StatelessWidget {
             icon: const Icon(Iconsax.close_circle),
             onPressed: () => Navigator.pop(context),
           ),
-        ],
-      ),
-      body: StreamBuilder<QuerySnapshot>(
-        stream: FirebaseFirestore.instance.collection('RecipeApp').snapshots(),
-        builder: (context, snapshot) {
           if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           }

@@ -17,24 +17,11 @@ class _ViewAllItemsState extends State<ViewAllItems> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
-        automaticallyImplyLeading: false,
-        elevation: 0,
-        actions: [
-          const SizedBox(width: 15),
+    return Scaffolddth: 15),
           MyIconButton(
             icon: Iconsax.arrow_left,
             pressed: () {
-              Navigator.pop(context);
-            },
-          ),
-          const Spacer(),
-          Text(
-            "Quick & Easy",
-            style: TextStyle(
+            
               fontSize: 20,
               fontWeight: FontWeight.bold,
               color: Theme.of(context).colorScheme.onBackground,

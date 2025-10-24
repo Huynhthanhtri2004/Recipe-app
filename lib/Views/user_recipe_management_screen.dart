@@ -14,37 +14,12 @@ class UserRecipeManagementScreen extends StatefulWidget {
 }
 
 class _UserRecipeManagementScreenState extends State<UserRecipeManagementScreen>
-    with SingleTickerProviderStateMixin {
-  late TabController _tabController;
-  final FirebaseAuth _auth = FirebaseAuth.instance;
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-
-  @override
-  void initState() {
-    super.initState();
-    _tabController = TabController(length: 3, vsync: this);
-  }
+    with SingleTickerProviderState
 
   @override
   void dispose() {
     _tabController.dispose();
-    super.dispose();
-  }
-
-  /// Lấy tất cả công thức của user (cả submittedBy và ownerId)
-  Future<List<DocumentSnapshot>> _getUserRecipes(String userId) async {
-    try {
-      // Tìm công thức với submittedBy
-      final submittedByQuery = await _firestore
-          .collection('RecipeApp')
-          .where('submittedBy', isEqualTo: userId)
-          .get();
-
-      // Tìm công thức với ownerId
-      final ownerIdQuery = await _firestore
-          .collection('RecipeApp')
-          .where('ownerId', isEqualTo: userId)
-          .get();
+    super.dispowait _fir
 
       // Gộp kết quả và loại bỏ trùng lặp
       final allDocs = <DocumentSnapshot>[];
