@@ -2,10 +2,9 @@
   {
     "origin": [
       "http://localhost:5000",
-      "http://localhost:51501",
-      "http://127.0.0.1:8080",
       "http://localhost:8080",
-      "https://your-domain.com"
+      "https://recipeapp-90db2.web.app",
+      "https://recipeapp-90db2.firebaseapp.com"
     ],
     "method": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     "responseHeader": [
@@ -17,6 +16,3 @@
     "maxAgeSeconds": 3600
   }
 ]
-
-
-
