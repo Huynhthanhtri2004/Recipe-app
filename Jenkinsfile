@@ -65,6 +65,10 @@ pipeline {
 
         // 2. TRIỂN KHAI APK (MOBILE)
         stage('Build & Sign Android APK') {
+            environment {
+                // GHI ĐÈ biến môi trường bị lỗi bằng đường dẫn chính xác của bạn
+        ANDROID_HOME = '/home/huynhthanhtri/Android/Sdk'
+    }
       steps {
         // Lấy File Keystore và Mật khẩu/Alias
                 withCredentials([
