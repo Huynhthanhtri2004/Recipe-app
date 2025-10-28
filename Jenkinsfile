@@ -8,7 +8,7 @@ pipeline {
         // CẤU HÌNH FIREBASE VÀ DISTRIBUTION
         FIREBASE_PROJECT_ID = "recipeapp-90db2"
         FIREBASE_CREDENTIALS = "firebase-sa"
-        FIREBASE_ANDROID_APP_ID = "YOUR_ANDROID_APP_ID_HERE" // ⬅️ ID Ứng dụng Android từ Console
+        FIREBASE_ANDROID_APP_ID = "1:632817783218:android:f080d080710ed9d16354ab" // ⬅️ ID Ứng dụng Android từ Console
         TESTER_GROUPS = "internal-testers"
 
         // CẤU HÌNH SIGNING (Bắt buộc cho APK)
