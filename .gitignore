@@ -48,3 +48,5 @@ app.*.map.json
 CV_SUMMARY.md
 firebase_options.json
 lib/firebase_options.dart
+devtools_options.yaml
+cors.json
