@@ -1,16 +1,12 @@
 # recipe_app
+User:
+tk: tri@gmail.com
+pass:123456
 
-A new Flutter project.
+admin:
+tk: admin@gmail.com 
+pass: 123456
 
-## Getting Started
+link: https://recipeapp-90db2.web.app/
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Vì em sử dụng server là máy ảo ubuntu để deploy trên firebase hosting nên muốn truy cập bằng link thì em sẽ phải khởi động máy ảo ubuntu thì mới có thể truy cập được 

@@ -43,3 +43,8 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# tài liệu không cần thiết
+CV_SUMMARY.md
+firebase_options.json
+lib/firebase_options.dart
